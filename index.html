@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JJ Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header>
+    <h1>JJ Engine</h1>
+    <div>
+      <button id="runBtn">Run</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main>
+    <!-- Explorer Sidebar -->
+    <aside id="explorer">
+      <h2>Explorer</h2>
+      <ul>
+        <li>🧠 stage</li>
+        <li>🎭 hero.sprite</li>
+        <li>🔧 movement.script</li>
+        <!-- You can dynamically expand this list -->
+      </ul>
+    </aside>
+
+    <!-- Stage Area -->
+    <section id="stage">
+      <canvas id="stageCanvas" width="400" height="300"></canvas>
+    </section>
+  </main>
+
+  <!-- Code Input Section -->
+  <section id="editor">
+    <h2>Code</h2>
+    <textarea id="codeInput" placeholder="// Write your script here..."></textarea>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
